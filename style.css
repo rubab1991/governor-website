@@ -1,0 +1,123 @@
+/* Main container */
+.main-container {
+    position: relative;
+    height: 100vh;
+    display: flex; /* Flex container */
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-end; /* Align content to the right */
+    padding-right: 20px; /* Add padding on the right */
+}
+.background {
+    padding-top: 150px;
+}
+/* Background Image with light overlay */
+.background {
+    background-image: url(./bg_house.jpg); /* Replace with your image */
+    background-size: cover;     /* Make the background cover the entire page */
+    background-position: center; /* Center the background image */
+    position: absolute;         /* So we can position the overlay */
+    height: 100vh;              /* Full viewport height */
+    justify-content: center;    /* Center horizontally */
+    align-items: center; 
+    width: 100%;
+    top: 0;
+    z-index: 0;       /* Center vertically */
+}
+
+/* Semi-transparent overlay for readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% transparency */
+    z-index: 1;  /* Ensures it sits on top of the background */
+}
+
+
+.nav {
+    position: fixed; /* Fixed at the top */
+top: 0;
+width: 97%;
+color: #fff; /* White text */
+background-color: navy;
+align-items: center;
+padding: 20px;
+height: 80px;
+text-align: justify;
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+z-index: 1000; /* Keep above other content */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+    
+}
+.logo-container {
+    display: flex;
+    align-items: center; }/* Align the logo vertically within the navbar */
+
+    .governor-pic {
+        position:absolute;
+        top: 80px; /* Adjust to be below the navbar */
+        right: -300px; /* Adjust for horizontal placement */
+        z-index: 2; /* Ensure it is on top of the background */
+        width: 900px; /* Adjust size of the image */
+        height: auto;  
+        margin-right: 20px; 
+    }
+    .left-side-text {
+        position: absolute;
+        top: 110px;  /* Same top alignment as Governor's image */
+        left: 5px; /* Adjusted to be next to the image */
+        z-index: 2;
+        padding: 15px;
+        color: rgb(54, 10, 250);
+        font-size: 2.5rem;
+        width: 700px; /* Control the width of the text box */
+        padding: 10px;
+        line-height: 1.5;
+     }
+     .left-side-text p {
+        margin-bottom: 10px; /* Reduced space between paragraphs */
+    }
+    
+    .left-side-text p strong {
+        font-size: 1.5rem; /* Larger font for emphasis */
+        color: darkblue;   /* Emphasis color */
+    }
+    .left-side-text h1, .left-side-text h2, .left-side-text h3, .left-side-text p {
+        margin: 5px 0; /* Reduce the margin between each element */
+    }
+    
+    /* Ensure that no extra margin or padding is added unnecessarily */
+    body h2, h3, p {
+        margin: 0;
+        padding: 0;
+    }
+    .button{
+        background-color: blue;
+        padding: 7px;
+        margin-left: 250px;
+        width: 200px;
+        font:large;
+        color: white;
+    }
